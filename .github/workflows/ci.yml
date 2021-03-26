@@ -5,9 +5,13 @@ name: React App CI
 
 on:
   push:
-    branches: [ releases/* ]
+    branches: 
+    - main
+    - releases/*
   pull_request:
-    branches: [ releases/* ]
+    branches: 
+    - main
+    - releases/*
 
 jobs:
   build-test:
