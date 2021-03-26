@@ -33,7 +33,7 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
-deploy-prod:
+  deploy-prod:
   name: Deploy to Production environment
   needs: [deploy-dev-test]
   runs-on: ubuntu-latest
